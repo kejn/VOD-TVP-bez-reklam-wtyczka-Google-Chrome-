@@ -2,7 +2,7 @@
 Wtyczka do Google Chrome pozwalająca na oglądanie filmów z serwisu VOD TVP z pominięciem reklam.  
 __Nie obsuguje filmów, które można odtwarzać tylko poprzez Silverlight__  
 # Jak korzystać?
-1. [Pobierz](https://github.com/kejn/VOD-TVP-bez-reklam-wtyczka-Google-Chrome-/archive/master.zip) projekt jako archiwum ` `.zip`.
+1. [Pobierz](https://github.com/kejn/VOD-TVP-bez-reklam-wtyczka-Google-Chrome-/archive/master.zip) projekt jako archiwum `.zip`.
 2. Rozpakuj paczkę do dowolnego folderu.
 3. Uruchom __Google Chrome__ i otwórz __Rozszerzenia__.  
    Jeśli nie wiesz jak to zrobić, w pasku adresu wpisz
