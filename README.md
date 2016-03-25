@@ -14,3 +14,6 @@ __Nie obsuguje filmów, które można odtwarzać tylko poprzez Silverlight__
   
 # Na koniec
 Jeśli masz jakieś pomysły albo uwagi daj mi znać na `kaen04@gmail.com` 
+
+# Zmiany
+* 26.03.2016: Teraz można oglądać także filmy z kategorii "Informacje i publicystyka"
