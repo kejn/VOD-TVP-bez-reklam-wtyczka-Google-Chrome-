@@ -14,7 +14,7 @@
 }
 
 function searchInIframe(iframeContent) {
-	var url = iframeContent.match(/\'http:\/\/(.*)type\: \'video\//g);
+	var url = iframeContent.match(/\'http.:\/\/(.*)type\: \'video\//g);
 	if(url === undefined || url === null) {
 		console.error('Silverlight');
 		throw new Error('Ta wtyczka nie generuje linków dla filmów obsługiwanych przez Silverlight');
