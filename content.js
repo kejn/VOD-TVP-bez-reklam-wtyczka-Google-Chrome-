@@ -13,17 +13,29 @@
 	return searchInIframe(iframeContent.documentElement.innerHTML);
 }
 
+function getTitle() {
+		var titleBuilt = '';
+		var pathLinks = document.querySelectorAll('#path > span > a');
+		console.log(pathLinks);
+		for(var i=2; i < pathLinks.length; ++i) {
+			titleBuilt += pathLinks[i].firstChild.data + ' ';
+		}
+		return titleBuilt;
+	}
+
 function searchInIframe(iframeContent) {
-	var url = iframeContent.match(/\'http.:\/\/(.*)type\: \'video\//g);
+	var url = iframeContent.match(/\'https?:\/\/(.*)type\: \'video\//g);
 	if(url === undefined || url === null) {
 		console.error('Silverlight');
 		throw new Error('Ta wtyczka nie generuje linków dla filmów obsługiwanych przez Silverlight');
 	}
 	url = url.toString().split("\'")[1];
-	console.log('Url:\n\n' + url);
+	console.log('Url: ' + url);
+	var titleVar = getTitle();
 	return {
     'movieUrl': url,
-		'error': null
+		'error': null,
+		'title': titleVar
 	};
 }
 

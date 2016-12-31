@@ -48,7 +48,7 @@ function onPageDetailsReceived(pageDetails)  {
 		renderStatus('Kliknij poniższy link aby oglądać bez reklam :)')
 		var movieLink = document.querySelector('#movie');
 		movieLink.href = pageDetails.movieUrl;
-		movieLink.innerHTML = pageDetails.movieUrl;
+		movieLink.innerHTML = pageDetails.title;
 		movieLink.style.display = 'inline';
 		movieLink.addEventListener("click", function(){
 			chrome.browserAction.setIcon({path:'icon.png'});
