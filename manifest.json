@@ -2,7 +2,7 @@
 	"manifest_version": 2,
   "name": "VOD TVP Film bez reklam",
   "description": "Te rozszerzenie pozwala oglądać filmy z serwisu VOD TVP z pominięciem reklam",
-  "version": "1.1",
+  "version": "1.2",
 	"background": {
 		"scripts": ["event.js"],
 		"persistent": false
