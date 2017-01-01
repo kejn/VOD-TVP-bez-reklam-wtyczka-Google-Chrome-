@@ -7,13 +7,14 @@ __Nie obsuguje filmów, które można odtwarzać tylko poprzez Silverlight__
 3. Uruchom __Google Chrome__ i otwórz __Rozszerzenia__.  
    Jeśli nie wiesz jak to zrobić, w pasku adresu wpisz
 `chrome://extensions/`
-4. Odhacz `Tryb programisty`. Pojawią się nowe przyciski.
-5. Kliknij `Wczytaj rozszerzenie bez pakietu...` i w oknie, które się pojawi wybierz folder z rozpakowanymi plikami z punktu __2.__
-6. Odhacz z powrotem `Tryb programisty`. Jeśli tego nie zrobisz, przy każdym uruchomieniu przeglądarki będzie wyskakiwać okienko z ostrzeżeniem.
+4. Włącz `Tryb programisty`. Pojawią się nowe przyciski.
+5. Kliknij `Wczytaj rozszerzenie bez pakietu...` i w oknie, które się pojawi wybierz folder z rozpakowanymi plikami.
+6. Wyłącz `Tryb programisty`.
 7. Wejdź na <http://vod.tvp.pl/> i wypróbuj! :)  
-  
+
 # Na koniec
 Jeśli masz jakieś pomysły albo uwagi daj mi znać na `kaen04@gmail.com` 
 
 # Zmiany
 * 26.03.2016: Teraz można oglądać także filmy z kategorii "Informacje i publicystyka"
+* 01.01.2017: W pop-up'ie zamiast linka wyświetla się tytuł filmu. Dodano obsługę materiałów z dostępem poprzez HTTPS.
