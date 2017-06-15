@@ -1,27 +1,12 @@
-﻿function findMovieUrl(){
-	var iframe = document.querySelector('.movieWrapper > iframe');
-	
-	if(iframe === undefined || iframe === null) {
-		console.error('Couldn\'t find IFRAME inside .movieWrapper element');
-		throw new Error('Nie jesteś na stronie z filmem.');
-	}
-	console.log(iframe.src);
-	if(iframe.src.indexOf('vod.tvp.pl') < 0) {
-		throw new Error('src;' + iframe.src);
-	}
-	var iframeContent = iframe.contentWindow.document || iframe.contentDocument ;
-	return searchInIframe(iframeContent.documentElement.innerHTML);
+function findMovieUrl(){
+  var result;
+    var wrapper = document.querySelector('.playerContainer iframe').contentDocument;
+    if (wrapper) {
+      var player = wrapper.querySelector('iframe').contentDocument;
+      result = searchInIframe(player.documentElement.innerHTML);
+    }
+  return result;
 }
-
-function getTitle() {
-		var titleBuilt = '';
-		var pathLinks = document.querySelectorAll('#path > span > a');
-		console.log(pathLinks);
-		for(var i=2; i < pathLinks.length; ++i) {
-			titleBuilt += pathLinks[i].firstChild.data + ' ';
-		}
-		return titleBuilt;
-	}
 
 function searchInIframe(iframeContent) {
 	var url = iframeContent.match(/\'https?:\/\/(.*)type\: \'video\//g);
@@ -31,11 +16,10 @@ function searchInIframe(iframeContent) {
 	}
 	url = url.toString().split("\'")[1];
 	console.log('Url: ' + url);
-	var titleVar = getTitle();
 	return {
     'movieUrl': url,
-		'error': null,
-		'title': titleVar
+	'error': null,
+    'title': url
 	};
 }
 
